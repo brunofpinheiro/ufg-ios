@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +15,47 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ufg_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kh0-h3-Hie">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kh0-h3-Hie" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3BK-lu-NIa"/>
+                            <constraint firstItem="kh0-h3-Hie" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="57w-Hh-ge4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kh0-h3-Hie" secondAttribute="trailing" id="97b-9B-e8E"/>
+                            <constraint firstItem="kh0-h3-Hie" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Lh8-KY-SeE"/>
+                            <constraint firstItem="kh0-h3-Hie" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jQO-bS-Yxd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kh0-h3-Hie" secondAttribute="bottom" id="yXt-ju-mzK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3BK-lu-NIa"/>
+                                <exclude reference="57w-Hh-ge4"/>
+                                <exclude reference="Lh8-KY-SeE"/>
+                                <exclude reference="jQO-bS-Yxd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3BK-lu-NIa"/>
+                                <include reference="57w-Hh-ge4"/>
+                                <include reference="Lh8-KY-SeE"/>
+                                <include reference="jQO-bS-Yxd"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ufg_logo" width="650" height="928"/>
+    </resources>
 </document>
